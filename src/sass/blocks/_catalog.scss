@@ -1,0 +1,171 @@
+.catalog {
+    padding-bottom: 80px;
+    &__tabs {
+        margin-top: 46px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    &__tab {
+        width: 222px;
+        height: 52px;
+        border: 2px solid #D0D0D0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 48px;
+        color: #6B6B6B;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 5px;
+        transform: skew(-25deg);
+        cursor: pointer;
+        transition: .2s linear;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }
+        div {
+            transform: skew(25deg);
+        }
+        &--active {
+            background-color: $main-color;
+            border: none;
+            color: #fff;
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        &--active {
+            display: flex;
+        }
+    }
+    &-card {
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #E8E8E8;
+        padding: 20px;
+        overflow: hidden;
+        
+        &__img {
+            max-width: 100%;
+            height: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        &__subtitle {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__desc {
+            margin-top: 15px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__link {
+            display: block;
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: $main-color;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        hr {
+            background-color: #E8E8E8;
+            margin: 17px 0;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price {
+            font-weight: 300;
+            font-size: 14px;
+            color: #555;
+            text-decoration: line-through;
+        }
+        &__actual-price {
+            font-weight: 700;
+            font-size: 20px;
+            color: #050505;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-105%);
+            transition: 0.4s all;
+            &--active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__backside {
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            transition: 0.4s all;
+            padding-right: 20px;
+            margin-bottom: 0;
+            padding-left: 12px;
+            list-style-type: none;
+            li {
+                position: relative;
+                font-weight: 300;
+                font-size: 14px;
+                color: #555;
+                &::before {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    position: absolute;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+            &--active {
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+        }
+        &__link-back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 12px));
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            color: $main-color;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

@@ -1,4 +1,13 @@
 @media (max-width:991px) {
+    .button {
+        &:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        &:active {
+            transform: scale(0.9);
+        }
+    }
     .promo {
         .header {
             justify-content: space-evenly;
@@ -14,6 +23,11 @@
         .title--left {
             font-size: 34px;
             line-height: 50px;
+        }
+    }
+    .catalog {
+        &__content {
+            margin-top: 45px;
         }
     }
 }
@@ -96,6 +110,25 @@
         &__desc {
             font-size: 18px;
             line-height: 26px;
+        }
+    }
+    .carousel {
+        padding: 60px 0;
+        min-height: 590px;
+    }
+    .catalog {
+        padding-bottom: 60px;
+        &__tabs {
+            margin-top: 30px;
+        }
+        &__tab {
+            width: 160px;
+            height: 45px;
+            font-size: 17px;
+            line-height: 43px;
+        }
+        &__content {
+            margin-top: 30px;
         }
     }
 }
@@ -222,5 +255,21 @@
     .carousel {
         padding: 40px 0;
         min-height: 350px;
+    }
+    .catalog {
+        padding-bottom: 30px;
+        &__tabs {
+            margin-top: 15px;
+        }
+        &__tab {
+            width: 98px;
+            height: 30px;
+            font-size: 11px;
+            line-height: 28px;
+            margin: 0 1px;
+        }
+        &__content {
+            margin-top: 15px;
+        }
     }
 }
