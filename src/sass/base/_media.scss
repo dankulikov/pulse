@@ -30,6 +30,22 @@
             margin-top: 45px;
         }
     }
+    .feedback {
+        &__client {
+            justify-content: space-evenly;
+        }
+        &__text {
+            max-width: 535px;
+        }
+    }
+    .footer {
+        height: 530px;
+        &__info {
+            width: 430px;
+            height: 250px;
+            padding: 30px 50px;
+        }
+    }
 }
 
 @media (max-width:767px) {
@@ -129,6 +145,27 @@
         }
         &__content {
             margin-top: 30px;
+        }
+    }
+    .feedback {
+        &__client {
+            margin-top: 30px;
+        }
+        &__avatar {
+            width: 170px;
+            img {
+                width: 100%;
+            }
+        }
+        &__text {
+            max-width: 435px;
+            margin-left: 20px;
+        }
+        &__review {
+            font-size: 14px;
+            p {
+                margin-top: 10px;
+            }
         }
     }
 }
@@ -270,6 +307,46 @@
         }
         &__content {
             margin-top: 15px;
+        }
+    }
+    .feedback {
+        &__clients {
+            padding: 0 5px;
+        }
+        &__client {
+            margin-top: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__avatar {
+            width: 120px;
+            height: 120px;
+        }
+        &__text {
+            margin-left: 0;
+        }
+        &__client-name {
+            text-align: center;
+        }
+        &__client-achievements {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__info {
+            width: 320px;
+            height: 150px;
+            padding: 10px 10px;
+        }
+        &__address {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__phone {
+            margin: 15px 60px;
+        }
+        &__social {
+            margin-top: 20px;
         }
     }
 }

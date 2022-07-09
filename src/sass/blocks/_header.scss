@@ -24,8 +24,10 @@
         font-weight: 500;
         font-size: 18px;
         text-decoration: none;
+        transition: 0.3s linear;
         &:hover {
             color: #fff;
+            transform: translateY(-3px);
         }
     }
     &__contacts {
