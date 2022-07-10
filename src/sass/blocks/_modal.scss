@@ -1,0 +1,53 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    min-height: 400px;
+    background-color: #F2F2F2;
+    padding: 40px;
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -44px;
+        font-size: 50px;
+        line-height: 18px;
+        color: $main-color;
+        cursor: pointer;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        color: #0D0D0D;
+        text-align: center;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #0D0D0D;
+        text-align: center;
+        margin-top: 10px;
+    }
+    &--mini {
+        min-height: 140px;
+        .modal__subtitle {
+            line-height: 22px;
+        }
+    }
+}
+
+#consultation, #order, #thanks {
+    display: none;
+}

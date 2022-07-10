@@ -333,6 +333,7 @@
         }
     }
     .footer {
+        width: 100vw;
         &__info {
             width: 320px;
             height: 150px;
@@ -346,6 +347,20 @@
             margin: 15px 60px;
         }
         &__social {
+            margin-top: 20px;
+        }
+    }
+    .overlay {
+        .modal {
+            width: 320px;
+            padding: 30px 10px;
+            &__close {
+                right: 5px;
+                top: 10px;
+            }
+        }
+        .feed-form--mt25 {
+            margin: 0 auto;
             margin-top: 20px;
         }
     }
