@@ -13,8 +13,12 @@
         width: 277px;
         text-align: center;
         &-img {
-            display: block;
-            margin: 0 auto;
+            &--animated {
+                animation: heartbeat 1.5s ease infinite;
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
         }
         &-title {
             margin-top: 35px;

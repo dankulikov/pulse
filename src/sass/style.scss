@@ -1,4 +1,5 @@
 @import 'base/variables.scss';
+@import 'base/animation.scss';
 
 * {
     font-family: 'MuseoModerno', sans-serif;
@@ -27,5 +28,6 @@ h2 {
 @import 'blocks/feedback';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/scrollup';
 
 @import 'base/media';
