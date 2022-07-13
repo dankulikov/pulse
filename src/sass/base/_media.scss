@@ -267,6 +267,9 @@
         &__item-desc {
             margin-top: 10px;
         }
+        &__item-img--animated {
+            animation: none;
+        }
     }
     .consultation {
         width: 100vw;
